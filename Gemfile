@@ -3,6 +3,7 @@ ruby '2.2.3'
 
 # Facebook Connect
 gem 'omniauth-facebook'
+gem 'geocoder'
 
 gem 'rails', '4.2.3'
 gem 'puma'

@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Pokemon.create(name: "Carapuce", address: "45 rue de la gare, nantes")
+Pokemon.create(name: "Pikachu", address: "6 avenue de la république, nantes")

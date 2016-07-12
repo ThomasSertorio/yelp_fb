@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pokemon.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @pokemon.address %>
+</p>
+
+<%= link_to 'Edit', edit_pokemon_path(@pokemon) %> |
+<%= link_to 'Back', pokemons_path %>
+
+<% content_for(:after_js) do %>
+  <script>
+    $(document).ready(function(){
+      var pokemon_name = '<%= j @pokemon.name %>';
+      var pokemon_adress = '<%= j @pokemon.address %>';
+      alert(pokemon_name + " is closed to " + pokemon_adress);
+    })
+  </script>
+<% end %>
